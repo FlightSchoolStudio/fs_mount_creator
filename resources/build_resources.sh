@@ -42,3 +42,11 @@ build_ui dialog
 # build resources
 echo "building resources..."
 build_res resources
+
+
+C:/Users/dfult/git/fs_batch_publish/resources/dialog.ui
+C:/Users/dfult/git/fs_batch_publish/python/app/ui/dialog.py
+
+C:\python37\Lib\site-packages\PySide2\uic.exe C:/Users/joe/git/fs_mount_creator/resources/dialog.ui -o C:/Users/joe/git/fs_mount_creator/python/app/ui/dialog.py
+
+C:\python37\Lib\site-packages\PySide2\rcc.exe -py3 C:/Users/joe/git/fs_mount_creator/python/app/ui/resources_rc.py C:/Users/joe/git/fs_mount_creator/resources/resources.qrc 
