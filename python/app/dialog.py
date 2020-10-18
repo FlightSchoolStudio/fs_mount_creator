@@ -89,6 +89,8 @@ class AppDialog(QtGui.QWidget):
         dir = QtGui.QFileDialog.getExistingDirectory(parent=self)
         if dir:
             norm_path = ShotgunPath.normalize(dir)
+            if not norm_path.endswith('\\'):
+                norm_path = '{0}\\'.format(norm_path)
             self.ui.vhd_location_le.insert(norm_path)
 
     def _create_mount_cb(self):
