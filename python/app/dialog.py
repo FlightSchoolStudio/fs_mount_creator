@@ -152,7 +152,7 @@ class AppDialog(QtGui.QWidget):
         """
         Method to mount the vhd file.
         """
-        self.p4_fw.utils.delete_client(self.client_created, force=True)
+        self.p4_fw.utils.delete_client(self.client_created)
         
         self.powershell_loc = self.powershell_loc.replace('\\', '/')
         self.vhd_file_path = self.vhd_file_path.replace('\\', '/')
